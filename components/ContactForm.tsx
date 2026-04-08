@@ -52,7 +52,7 @@ export function ContactForm() {
     setStatus('submitting')
 
     try {
-      await fetch('/', {
+      await fetch('/netlify-forms.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...form } as Record<string, string>),
