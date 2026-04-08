@@ -55,7 +55,7 @@ export function ContactForm() {
       await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: encode({ 'form-name': 'contact', ...form }),
+        body: encode({ 'form-name': 'contact', ...form } as Record<string, string>),
       })
       setStatus('success')
       setForm(initialState)
