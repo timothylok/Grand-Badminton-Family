@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <!--
+    Netlify Forms detection file.
+    @netlify/plugin-nextjs v5 cannot parse forms from JS-rendered pages,
+    so we declare the form here for Netlify to detect at build time.
+    The actual form submission is handled in components/ContactForm.tsx.
+  -->
+  <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="text"  name="name" />
+    <input type="email" name="email" />
+    <input type="text"  name="subject" />
+    <textarea           name="message"></textarea>
+    <input type="text"  name="bot-field" />
+  </form>
+</body>
+</html>
