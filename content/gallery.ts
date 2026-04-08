@@ -16,9 +16,7 @@ export const gallery = {
   },
 
   images: [
-    // Add real images here. Example:
-    // { src: 'match-night-01.jpg', alt: 'Players competing at a Friday evening session', caption: 'Friday Night Session' },
-    // { src: 'tournament-2024.jpg', alt: 'Players at the 2024 tournament', caption: '2024 Tournament' },
+    { src: 'girl-and-boy.png', alt: 'Girl and boy playing badminton' },
   ] as GalleryImage[],
 
   placeholder: {
